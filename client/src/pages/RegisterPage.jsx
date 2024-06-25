@@ -5,10 +5,10 @@ import { Login, Register } from "../api/User";
 import { Navigate } from "react-router-dom";
 
 function RegisterPage({ setCurrentUser }) {
-	const [name, setName] = useState();
-	const [email, setEmail] = useState();
-	const [mobile, setMobile] = useState();
-	const [password, setPassword] = useState();
+	const [name, setName] = useState("");
+	const [email, setEmail] = useState("");
+	const [mobile, setMobile] = useState("");
+	const [password, setPassword] = useState("");
 	const [showLoginRedirect, setShowLoginRedirect] = useState(false);
 
 	const handleRegister = async () => {

@@ -21,7 +21,7 @@ function HomePage({ currentUser, setCurrentUser }) {
 		const response = await fetchJobsByQuery(query);
 
 		if (response.status == 200) {
-			setJobs(response.data.jobs);
+			setJobs(response.data.jobs ||[]);
 		}
 	};
 
